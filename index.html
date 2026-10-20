@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RAI — Japanese Restaurant</title>
+  <meta name="description" content="RAI is a Japanese restaurant offering omakase, seasonal tasting menus, halal and vegetarian menus." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Temporary notice -->
+  <div class="notice">
+    <p>
+      <strong>Temporary website.</strong>
+      Our main site is unavailable due to a <code>europe-west2</code> datacenter outage
+      and SiteGround issue. Online booking remains available below.
+    </p>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="wrap header">
+      <a class="brand" href="#">RAI</a>
+      <nav>
+        <a href="#menu">Menu</a>
+        <a href="#book">Book</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="wrap">
+      <p class="small">Japanese Restaurant</p>
+      <h1>Seasonal Omakase &amp; Tasting Menus</h1>
+      <p class="intro">
+        RAI serves modern Japanese cuisine with seasonal ingredients, careful
+        craftsmanship, and a calm dining experience.
+      </p>
+      <a class="button" href="#book">Book a Table</a>
+    </div>
+  </section>
+
+  <!-- Menu -->
+  <section id="menu" class="section">
+    <div class="wrap">
+      <h2>Menus</h2>
+      <p class="intro">Please tell us about any dietary requirements when booking.</p>
+
+      <div class="menu-list">
+        <a href="#" class="menu-item">
+          <span>9-Course Omakase</span>
+          <span class="arrow">PDF →</span>
+        </a>
+
+        <a href="#" class="menu-item">
+          <span>11-Course Omakase</span>
+          <span class="arrow">PDF →</span>
+        </a>
+
+        <a href="#" class="menu-item">
+          <span>13-Course Omakase</span>
+          <span class="arrow">PDF →</span>
+        </a>
+
+        <a href="#" class="menu-item">
+          <span>Seasonal Raw, Alc &amp; Tasting Menu</span>
+          <span class="arrow">PDF →</span>
+        </a>
+
+        <a href="#" class="menu-item">
+          <span>Halal Menu</span>
+          <span class="arrow">PDF →</span>
+        </a>
+
+        <a href="#" class="menu-item">
+          <span>Vegetarian Tasting Menu</span>
+          <span class="arrow">PDF →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking -->
+  <section id="book" class="section dark">
+    <div class="wrap booking">
+      <div>
+        <h2>Reservations</h2>
+        <p class="intro">
+          Book online through OpenTable. For large groups or private dining,
+          please contact us directly.
+        </p>
+
+        <ul class="details">
+          <li>Tuesday–Sunday</li>
+          <li>12:00–14:30 &amp; 18:00–22:30</li>
+          <li>+44 20 1234 5678</li>
+          <li>reservations@rairestaurant.com</li>
+        </ul>
+      </div>
+
+      <div class="widget">
+        <script type='text/javascript' src='//www.opentable.co.uk/widget/reservation/loader?rid=350571&type=standard&theme=tall&color=1&dark=false&iframe=true&domain=couk&lang=en-GB&newtab=false&ot_source=Restaurant%20website&cfe=true'></script>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="wrap contact">
+      <div>
+        <h2>Visit RAI</h2>
+        <p>
+          123 RAI Street<br />
+          London, United Kingdom
+        </p>
+        <p>
+          +44 20 8149 6248<br />
+          info@rairestaurant.com
+        </p>
+      </div>
+
+      <div class="map">
+        <img src="#" alt="RAI location map" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="wrap footer">
+      <p>© <span id="year"></span> RAI Japanese Restaurant</p>
+      <p class="small">
+        Temporary website — main site unavailable due to hosting disruption.
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
