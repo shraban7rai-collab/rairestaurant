@@ -10,6 +10,7 @@
   --grey: #666666;
   --light: #f6f4f0;
   --red: #a92730;
+  --gold: #c8a96a;
   --border: #e3ded7;
 }
 
@@ -17,7 +18,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   color: var(--black);
   background: var(--white);
-  line-height: 1.6;
+  line-height: 1.65;
 }
 
 a {
@@ -46,7 +47,8 @@ img {
 
 .intro {
   color: var(--grey);
-  max-width: 560px;
+  max-width: 680px;
+  margin-bottom: 18px;
 }
 
 h1 {
@@ -57,7 +59,12 @@ h1 {
 
 h2 {
   font-size: clamp(1.6rem, 4vw, 2.2rem);
-  margin-bottom: 12px;
+  margin-bottom: 14px;
+}
+
+h3 {
+  font-size: 1rem;
+  margin-bottom: 8px;
 }
 
 /* Temporary notice */
@@ -123,7 +130,7 @@ nav a:hover {
 }
 
 .hero .small {
-  color: #c8a96a;
+  color: var(--gold);
 }
 
 .hero .intro {
@@ -188,39 +195,53 @@ nav a:hover {
   align-items: start;
 }
 
-.details {
-  list-style: none;
-  margin-top: 25px;
-}
-
-.details li {
-  padding: 10px 0;
-  border-bottom: 1px solid var(--border);
-  color: var(--grey);
-}
-
 .widget {
-  background: var(--white);
+  background: var(--light);
   padding: 20px;
   border: 1px solid var(--border);
 }
 
-/* Contact */
-.contact {
+/* Visit */
+.visit {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 50px;
-  align-items: center;
 }
 
-.contact p {
+.info-block {
+  margin-bottom: 25px;
+}
+
+.info-block p {
   color: var(--grey);
-  margin-bottom: 15px;
 }
 
-.map {
-  height: 320px;
-  background: var(--border);
+.text-link {
+  color: var(--red);
+  font-size: 0.9rem;
+}
+
+.text-link:hover {
+  text-decoration: underline;
+}
+
+.hours {
+  list-style: none;
+  border-top: 1px solid var(--border);
+}
+
+.hours li {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+  color: var(--grey);
+}
+
+.hours li span:first-child {
+  color: var(--black);
+  font-weight: 600;
 }
 
 /* Footer */
@@ -245,7 +266,7 @@ footer {
 /* Mobile */
 @media (max-width: 760px) {
   .booking,
-  .contact {
+  .visit {
     grid-template-columns: 1fr;
   }
 
@@ -257,7 +278,7 @@ footer {
     padding: 60px 0;
   }
 
-  .map {
-    height: 240px;
+  nav {
+    gap: 14px;
   }
 }
